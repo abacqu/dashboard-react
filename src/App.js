@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Rating from "./components/Rating";
+import Review from "./components/Review";
+import Sentiment from "./components/Sentiment";
+import Sidebar from "./components/Sidebar";
+import Visitor from "./components/Visitor";
+import "./styles.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  return ( 
+    <div className="dashboard">
+    <Sidebar />
+    <Review />
+    <Rating />
+    <Sentiment />
+    <Visitor />
+    </div>  
   );
 }
 

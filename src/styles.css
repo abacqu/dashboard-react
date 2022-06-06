@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+}
+
+.dashboard {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.sidebar {
+    background-color: rgb(111, 129, 129);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+.rating {
+    background-color: rgb(62, 116, 116);
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.review {
+    background-color: rgb(25, 51, 51);
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.sentiment {
+    background-color: rgb(18, 117, 117);
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.visitor {
+    background-color: rgb(183, 233, 233);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+}
